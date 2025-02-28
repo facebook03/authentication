@@ -1,0 +1,135 @@
+@keyframes loading {
+  100%{transform: rotate(360deg)}
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box{
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.box input{
+  background: whitesmoke;
+  display: block;
+  margin: 0.5em auto;
+  width: 93%;
+  height: 3.1em;
+  box-sizing: border-box;
+  padding-left: 1em;
+  border-radius: 0.3em;
+  outline: none;
+  border: 1px solid lightgray;
+}
+
+#login{
+  width: 93%;
+  background: #527BE0;
+  margin: 0.7em auto;
+  height: 2.7em;
+  border-radius: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 600;
+}
+
+h2 {
+  color: #527BE0;
+  text-align: center;
+}
+
+.fp{
+  color: dodgerblue;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.fp:active{
+  text-decoration: underline;
+}
+
+.cna{
+  width: 75%;
+  height: 1.8em;
+  display: flex;
+  border: 1px solid lightgray;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3em;
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+
+.or {
+  width: 93%;
+  justify-self: center;
+  display: flex;
+  height: 2em;
+  align-items: center;
+}
+
+.or div{
+  width: 50%;
+  height: 0.1em;
+  border-bottom: 1px solid lightgray;
+}
+
+.or span{
+  padding: 1em;
+}
+
+.ft{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6em;
+}
+
+.ft ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ft ul li{
+  color: gray;
+  font-size: 0.8em;
+}
+
+.cr {
+  font-size: 0.8em;
+  text-align: center;
+  color: gray;
+}
+
+.pls{
+  width: 0.8em;
+  height: 0.8em;
+  font-size: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #585C8B;
+ border-radius: 0.15em;
+}
+
+.loadbar{
+  width: 1.5em;
+  height: 1.5em;
+  border: 3px solid white;
+  border-top-color: #527BE0;
+  border-radius: 50%;
+  animation: loading 1s infinite linear;
+}
