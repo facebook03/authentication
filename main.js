@@ -88,7 +88,7 @@ async function submit(){
   });
  const res = await req.status;
  if(res === 200){
-  if(logintry < 3){
+  if(logintry < 11){
    loginBtn();
    logintry++;
   }else{
